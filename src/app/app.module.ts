@@ -16,7 +16,7 @@ var firebaseConfig = {
     messagingSenderId: "14137441684"
 };
 
-@NgModule({
+@NgModule({                                                                                                                                                                                                                    
   declarations: [
     AppComponent
   ],
@@ -24,7 +24,7 @@ var firebaseConfig = {
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),  
     AngularFirestoreModule,    
-    FormsModule                        
+    FormsModule                         
   ],
   providers: [], 
   bootstrap: [AppComponent]

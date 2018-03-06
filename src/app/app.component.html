@@ -1,7 +1,53 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<html lang ="en">
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span></span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>WELCOME!</h3>
+        <ul>
+          
+        </ul>
+      </div>
+       <div class="contact">
+        <h3>Contact Form</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>First Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Last Name</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
 <input type = "text" [(ngModel)] = "title" name = "title" placeholder="Title..">
 <textarea [(ngModel)]="content" name="content" placeholder="Content.."></textarea>
-<input type="submit" value="Add a post" (click)="addPost()"> 
+<input type="submit" value="Add a post" (click)="addPost()">  
 
 <ul *ngFor="let post of posts | async">
   <li>
@@ -10,3 +56,4 @@
     {{ post.content }}
   </li>
 </ul>
+</html>
